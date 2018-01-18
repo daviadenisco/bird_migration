@@ -1,0 +1,26 @@
+<%# Write a birds/new and MAKE A NEW ROUTE for rendering it. NOTE you won't need to render any data with this view. Just focus on getting the method and action down. Then add app.use(bodyParser.urlencoded({ extended: false }) to the top of your app. DON'T erase the app.use(bodyParser.json()). %>
+  <!DOCTYPE html>
+  <html>
+
+  <head>
+    <meta charset="utf-8">
+    <title>New Bird</title>
+    <link rel="stylesheet" href="stylesheets/site.css">
+  </head>
+
+  <body>
+    <h1> Create a Bird </h1>
+    <div>
+      <!-- RESTful practices WE POST TO '/birds' to CREATE -->
+    </div>
+    <form id="newBirdForm" action="/birds" method="POST">
+      <input id="birdTitle" type="text" name="title" value="" placeholder="bird name" title="title of bird in database">
+      <p>description: </p>
+      <textarea name="description" value="" placeholder="bird appearance"></textarea>
+      <button>New bird</button>
+      <a href="/birds" title="view all birds in db">View all winged beasts</a>
+
+    </form>
+  </body>
+
+  </html>

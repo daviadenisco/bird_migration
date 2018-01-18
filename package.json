@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:reset": "dropdb birds_play && createdb birds_play && npm run db:migrate",
+    "db:migrate": "knex migrate:latest",
+    "db:rollback": ""
   },
   "keywords": [],
   "author": "",
